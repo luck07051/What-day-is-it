@@ -11,7 +11,7 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("--start", "-s", metavar='N', type=int, default=2000, help="start year")
 parser.add_argument("--end", "-e", metavar='N', type=int, default=2100, help="end year")
-parser.add_argument("--notime", action='store_false', help="dont print time")
+parser.add_argument("--notime", action='store_true', help="dont print time")
 arg = parser.parse_args()
 
 
@@ -61,7 +61,7 @@ while True:
     print("\t->", day.isoweekday()%7, day.strftime("%A"))
 
     # Print using time
-    if arg.notime:
+    if not arg.notime:
         print("\ttime:", "%.2f" % using_time + 's')
 
     # Print .. if answer
@@ -77,8 +77,9 @@ while True:
     print(Style.RESET_ALL)
 
 
-print("\nAverage time:", "%.2f"%(sum(log_time)/len(log_time)))
-
+print("\n")
+if not arg.notime:
+    print("Average time:", "%.2f"%(sum(log_time)/len(log_time)))
 print("Total:", log_noans + log_cor + log_incor)
 print("Correct:", log_cor)
 print("Incorrect:", log_incor)

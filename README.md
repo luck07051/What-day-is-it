@@ -35,14 +35,15 @@ E.g. on 2000, those Doomsday are Tuesday.
 
 ### 2. Years
 
-1700 -> 0
-1800 -> 5
-1900 -> 3
-2000 -> 2
-2100 -> 0
-2200 -> 5
-2300 -> 3
-2400 -> 2
+- 1700 -> 0
+- 1800 -> 5
+- 1900 -> 3
+- 2000 -> 2
+- 2100 -> 0
+- 2200 -> 5
+- 2300 -> 3
+- 2400 -> 2
 
 Years add 28 will not change weekday on Doomsday. e.g. 2000, 2028, 2056 and 2084 have same weekday on Doomsday.
+
 Years add 12 will change weekday by 1. e.g. 2000 -> 2, 2012 -> 3, 2024 -> 4.

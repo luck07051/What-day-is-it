@@ -1,16 +1,23 @@
 # What Day is it Practice Script
 
-Simple script to generator random date, and tell you its weekday after press a key.
+Simple script to practice 'day of week calculate skill'. I wrote this script for practice The Doomsday Algorithm that I find in [this video](https://youtu.be/z2x3SSBVGJU).
 
-## What this script for
+## How to use
 
-I wrote this script for practice The Doomsday Algorithm that I find in [this video](https://youtu.be/z2x3SSBVGJU).
+Run the script:
+```
+python3 wdp.py
 
-## The Doomsday Algorithm Note
+python3 wdp.py -s 1700 -e 2200
+```
+In script, you can press 0 to 7 to answer, q to quit and press any other key to show next date.
+
+
+## Note for The Doomsday Algorithm
 
 ### 1. Doomsday
 
-Those Doomsday have same weekday.
+Those Doomsday have same day of week.
 - 1/3 or 1/4 on leap years
 - 2/28 or 2/29 on leap years
 - 3/14

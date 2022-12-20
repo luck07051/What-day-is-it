@@ -1,4 +1,4 @@
-# What Day is it Practice Script
+# What Day is it
 
 Simple script to practice 'day of week calculate skill'. I wrote this script for practice The Doomsday Algorithm that I find in [this video](https://youtu.be/z2x3SSBVGJU).
 

@@ -15,6 +15,10 @@ def random_day(y_start, y_end):
     return random_date
 
 
+def show_doomsday_how(day):
+    pass
+
+
 def __main__():
     parser = argparse.ArgumentParser()
     parser.add_argument("--start", "-s", metavar='N', type=int, default=2000, help="start year")
@@ -26,6 +30,7 @@ def __main__():
     fd = sys.stdin.fileno()
     old_settings = termios.tcgetattr(fd)
 
+    # Init log value
     log_time = []
     log_cor = 0
     log_incor = 0
@@ -35,7 +40,7 @@ def __main__():
         day = random_day(arg.start, arg.end)
         print(day)
 
-        # Init value
+        # Reset value
         is_correct = None
         s_clock = time.time()
 
